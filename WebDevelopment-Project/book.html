@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <script src="javaScript.js"></script>
+
+      <link rel="stylesheet" type="text/css" href="cssweb.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+      <!-- this linke used to display the icon of social media data-->
+
+      <title>Book</title>
+   </head>
+
+   <body>
+
+<header>
+
+    <div id= "div1"><!--first div containt the logo and  text -->
+         <img src="D_logo.png" alt="D logo" width="170" height="170" >
+        <p>Laxury Hotel</p>
+    </div>
+    <nav id ="nav2"><!--navigation links, to other documents.  -->
+        <a class="active" href="index.html">Home</a>
+        <a href="Accommodation.html">Accommodation</a>
+        <a href="aboutus.html">About Us</a>
+        <a href="contactus.html">Contact Us</a>
+	</nav>
+	
+</header>
+
+ <div class="form">
+    <!--Form elemnt will request the user multiple elmnts in order to contact us-->
+    <form method="post" name="form" action="/server" autocomplete="on">
+
+      <div class="textField ">
+
+        <p>
+          <label> First Name:
+            <input type="text" name="fname" id="FirstName" placeholder=" Enter Your First Name " required />
+          </label>
+        </p>
+
+        <p>
+          <label>Last Name:
+            <input type="text" name="lname" id="LastName" placeholder=" Enter Last Name " required />
+          </label>
+        </p>
+
+  
+
+        <p>
+          <label>Date of Booking date:
+            <input type="text" id="Date" name ="d" placeholder="(yyyy-mm-dd)" required />
+          </label>
+        </p>
+
+        <p>
+          <label>Number of people :
+          <input type="number" id="People" name="people" max="10" placeholder="number of people" required />
+        </p>
+
+        <p>
+          <label>Email:
+            <input type="email" id="email" name="email" placeholder="name@domain.com" required />
+          </label>
+        </p>
+
+      </div>
+
+      <p> <label> Nationality:
+          <select name="nationality" id="nationalityList">
+            <option value="mosotho">Mosotho</option>
+            <option value="qatari">Qatari</option>
+            <option value="romanian">Romanian</option>
+            <option value="russian">Russian</option>
+            <option value="rwandan">Rwandan</option>
+            <option value="saint lucian">Saint Lucian</option>
+            <option value="salvadoran">Salvadoran</option>
+            <option value="samoan">Samoan</option>
+            <option value="san marinese">San Marinese</option>
+            <option value="sao tomean">Sao Tomean</option>
+            <option selected value="saudi">Saudi Arabia</option>
+            <option value="scottish">Scottish</option>
+            <option value="senegalese">Senegalese</optio>
+      
+          </select>
+        </label> </p>
+
+     
+
+
+   
+
+      <label>
+        <p>
+          <input class="Button" id="submitButton" type="submit" value="Submit" />
+          <input class="Button" id="clearButton" type="reset" value="Clear" />
+        </p>
+      </label>
+
+    </form>
+
+  </div>
+
+  
+
+       <!-- the footer contains the social data -->
+
+        <footer class="footer" >
+          <div class="social"  >
+             <a href = "#" ><i class="fab fa-instagram"></i></a>
+              <a href = "#"><i class="fab fa-snapchat"></i></a>
+               <a href = "#"><i class="fab fa-twitter"></i></a>
+                <a href = "#"><i class="fab fa-facebook-f"></i></a>
+          </div>
+            <ul> <!-- unorder list-->
+            <li><a href="terms.html">Terms And Conditions</a></li>
+          </ul>
+        <p class="copyright">©D Hotel </p>
+      </footer>
+ </body>
+</html> 
